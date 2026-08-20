@@ -1,0 +1,4 @@
+# 部署时由 deploy.sh 自动生成；手动部署请把下面域名改成你的子域名
+ticket.example.com {
+    reverse_proxy app:8080
+}
