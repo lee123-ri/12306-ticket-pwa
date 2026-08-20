@@ -60,18 +60,11 @@ curl -fsSL https://get.docker.com | sh
 
 ### 第 3 步：克隆代码到服务器（git 部署）
 
-在 GitHub 生成一个**只读**的 Personal Access Token（一次配置，以后 `git pull` 免密）：
-
-1. GitHub 头像 → Settings → Developer settings → Personal access tokens → **Fine-grained tokens** → Generate new token
-2. Repository access 选 `Only select repositories` → 勾选 `12306-ticket-pwa`
-3. Permissions → Contents 设为 `Read-only`
-4. 生成后复制 `github_pat_` 开头的 token
-
-然后在服务器上：
-
 ```bash
-git clone https://lee123-ri:你的PAT@github.com/lee123-ri/12306-ticket-pwa.git
+git clone https://github.com/lee123-ri/12306-ticket-pwa.git
 ```
+
+（仓库已公开，无需身份验证）
 
 ### 第 4 步：跑一键部署脚本
 
